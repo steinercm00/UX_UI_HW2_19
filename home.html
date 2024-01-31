@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="/Users/colleen/Desktop/CODING/UX_UI_HW_19/style.css">
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"> <!-- Use container-fluid to make content take up the full width -->
+                <div>
+                    <img src="Images/LOGO.gif" alt="Logo" width="80" height="80">
+                </div>
+                <div class="d-flex justify-content-between flex-grow-1"> <!-- Adjusted flex-grow-1 -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Wander</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Projects
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Wander</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-auto"> <!-- Added this div to align content to the right -->
+                    <button id="popup-btn" class="btn btn-primary">Contact Me</button> <!-- Your custom button -->
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section id="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Colleen Steiner is an user interface designer. She believes that good design transforms the lives of all users.  </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="large-cards-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="large-card">
+                        <img src="Images/Dribble_Wander.jpg" class="card-img" alt="Image Description 1">
+                        <h3 class="card-title">Wander</h3>
+                        <p class="card-description">Description of Card 1</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="large-card">
+                        <img src="Images/Transformer redesign Mock up.png" class="card-img" alt="Image Description 2">
+                        <h3 class="card-title">Transformer Redesign</h3>
+                        <p class="card-description">Description of Card 2</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="large-card">
+                        <img src="Images/Elemental Clothing/elemental.png" class="card-img" alt="Image Description 3">
+                        <h3 class="card-title">Elemental Clothing Mobile App</h3>
+                        <p class="card-description">Description of Card 3</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="large-card">
+                        <img src="Images/USDA_PortfolioMockup.png" class="card-img" alt="Image Description 4">
+                        <h3 class="card-title">USDA Redesign</h3>
+                        <p class="card-description">Description of Card 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="fcf-section">
+    <div class="fcf-body">
+        <h3 class="fcf-h3">Want to design the future together? 🚀<br> Drop me a line!</h3>
+        <div id="fcf-form">
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group email-group"> <!-- Add email-group class here -->
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- footer with circle links/icons--> 
+<footer>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="footer-item"><i class="fab fa-linkedin"></i></a>
+        <a href="https://dribbble.com/steinercm" target="_blank" class="footer-item"><i class="fab fa-dribbble"></i></a>
+        <a href="https://www.instagram.com/colleensteiner/" target="_blank" class="footer-item"><i class="fab fa-instagram"></i></a>
+    </div>
+</footer>
+
+<!-- popup form -->
+<div id="popup-form" class="popup-form">
+    <form>
+        <!--  fields go here -->
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+
+</html>

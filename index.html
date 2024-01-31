@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Colleen Steiner</title>
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            flex-shrink: 0;
+    
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div>
+                    <img src="Images/LOGO.gif" alt="Logo" width="80" height="80">
+                </div>
+                <div class="d-flex justify-content-between flex-grow-1">
+                    <a href="mailto:steinercm00@gmail.com">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </a>
+                    
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#about">About</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Skills
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#skills">User Research</a></li>
+                                    <li><a class="dropdown-item" href="#skills">Design</a></li>
+                                    <li><a class="dropdown-item" href="#skills">Practical</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ml-auto">
+                    <button class="btn btn-primary" id="contact-btn">Contact Me</button>
+                </div>
+                
+                <button id="popup-btn" class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="popup-form" class="popup-form">
+                    <form>
+                        <!-- Your form fields go here -->
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left">
+                <h1>About me...</h1>
+                <p>I was born and raised in New York, and have found my way to Nashville over the years. I am a
+                    life-long artist, a shark lover, a sports fanatic and enjoyer of any creative expression.</p>
+                <p>Having a curiosity in the human condition and emotion lead me to filmmaking and acting, which has
+                    taught me invaluable lessons in the connection between human experience and visual
+                    communication.</p>
+                <p>Because of this, I got into design a few years ago and have fallen in love with the processes,
+                    concepts and theories of UX/UI between attending bootcamps, reading and practicing concepts in my
+                    free time.</p>
+                <p>When I am not designing, I may be reading, making short films, acting, training at the gym, or
+                    hanging out with my dog, Ozzy.</p>
+                <button class="btn btn-primary">View Projects</button>
+                <button class="btn btn-primary">Contact Me</button>
+                <button class="btn btn-primary">Resume</button>
+            </div>
+            <div class="right">
+                <img src="Images/headshot1.png" alt="Headshot of Me in a dark blue sweater.">
+            </div>
+        </div>
+
+        <section id="skills" class="projects-section">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12 text-center">
+                        <h2 class="projects-heading">My Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-300">
+                            <img src="/Images/Dribble_Wander.jpg" class="card-img-top" alt="User Research">
+                            <div class="card-body">
+                                <h5 class="card-title">User Research</h5>
+                                <p class="card-text">Skills:</p>
+                                <ul class="card-list">
+                                    <li>Interviewing</li>
+                                    <li>Survey Design</li>
+                                    <li>Usability Testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card style=" height: 100%;">
+                            <img src="image-url2.jpg" class="card-img-top" alt="Design">
+                            <div class="card-body">
+                                <h5 class="card-title">Design</h5>
+                                <p class="card-text">Skills:</p>
+                                <ul class="card-list">
+                                    <li>Wireframing</li>
+                                    <li>Prototyping</li>
+                                    <li>Visual Design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-300">
+                            <img src="image-url3.jpg" class="card-img-top" alt="Practical">
+                            <div class="card-body">
+                                <h5 class="card-title">Practical</h5>
+                                <p class="card-text">Skills:</p>
+                                <ul class="card-list">
+                                    <li>Project Management</li>
+                                    <li>Time Management</li>
+                                    <li>Problem Solving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer with circle links/icons-->
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank" class="footer-item"><i class="fab fa-linkedin"></i></a>
+            <a href="https://dribbble.com/steinercm" target="_blank" class="footer-item"><i
+                    class="fab fa-dribbble"></i></a>
+            <a href="https://www.instagram.com/colleensteiner/" target="_blank" class="footer-item"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

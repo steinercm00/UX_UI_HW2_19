@@ -1,0 +1,261 @@
+/* Adjust padding and margin */
+/* Container for the headers */
+/* Adjust margin-bottom for the header container */
+
+.left {
+    flex: 1;
+    padding-right: 20px; /* Adjust the value as needed */
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px; /* Adjust the value as needed */
+}
+
+/* Regular state */
+.btn-primary {
+    background-color: #697a21;
+    border-color: #697a21;
+    color: white; /* Set the text color */
+    transition: all 0.3s; /* Add transition for smooth effect */
+    margin-right: 15px;
+}
+
+/* Hover state */
+.btn-primary:hover {
+    background-color: #5c671a;
+    border-color: #5c671a;
+    color: black; /* Change text color to black */
+    transform: scale(1.1); /* Make the button 10% bigger */
+}
+
+/* Custom CSS for alignment */
+.section-header-class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header-class h1,
+.section-header-class h2 {
+    margin: 0;
+}
+
+/* Ensure navbar content is aligned properly */
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Adjust padding of nav links */
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding */
+    margin-right: 10px; /* Adjust margin between items */
+}
+
+/* Make navbar responsive */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Containers for about me & images portion */
+.container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure body takes up entire viewport */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.projects-section {
+    margin-top: 50px; /* Adjust the value as needed */
+    margin-bottom: 50px;
+}
+
+.projects-heading {
+    margin-bottom: 50px; /* Add margin below the heading */
+}
+
+/* Adjust spacing between "My Projects" text and cards */
+.projects-section h2 {
+    margin-right: 50px; /* Adjust as needed */
+}
+
+/* Ensure all cards have the same height */
+.card {
+    height: 100%; /* Adjust as needed */
+}
+
+/* cards */ 
+.project-card-body {
+    /* height: 5000px; Remove fixed height */
+    overflow: auto; /* Add scrollbars if content overflows */
+}
+
+.card-body.project-card-body {
+    /* height: 5000px; Remove fixed height */
+    overflow: auto; /* Add scrollbars if content overflows */
+}
+
+/* Form container */
+.form-section, .fcf-section {
+    text-align: center; /* Center the form content horizontally */
+    margin-top: 50px; /* Adjust margin as needed */
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* Set max-width to prevent stretching */
+}
+
+/* Form field spacing */
+.form-group {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.fcf-body button {
+    width: 100%; /* Adjust button width */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-item {
+    color: #ffffff; /* Set icon color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline-flex; /* Use inline-flex to center vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #697a21;
+    font-size: 40px;
+    transition: all 0.3s; /* Add transition for smooth effect */
+}
+
+.footer-item:hover {
+    color: black; /* Change icon color on hover */
+    background-color: #697a21; /* Change background color on hover */
+    transform: scale(1.1); /* Make the icon 10% bigger on hover */
+}
+
+.left button {
+    margin-bottom: 70px;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.5s ease;
+}
+
+.footer-links a .fa {
+    color: #FFF;
+    background-color: #000;
+    width: 40px;
+    height: 28px;
+    padding-top: 12px;
+    border-radius: 20px;
+    transition: transform 0.3s ease; /* Add transition for smoother rotation */
+}
+
+.footer-links a:hover .fa {
+    animation: spin 2s infinite linear !important;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.right img {
+    max-width: 70%;
+    height: 60%;
+}
+
+/* Adjust margin-bottom for the header container */
+.navbar {
+    margin-bottom: 60px; /* Add margin bottom for spacing */
+}
+
+/* Adjust margin-bottom for h1 */
+h1 {
+    margin-bottom: 85px; /* Add margin bottom for spacing */
+}
+
+/* Adjust margin-bottom for cards */
+.large-card {
+    margin-top: 65px; /* Add margin bottom for spacing */
+}
+
+#popup-form { /* Change .popup-form to #popup-form */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+#popup-form form {
+    /* Add my form styling here */
+}
+
+#popup-form input,
+#popup-form textarea { 
+    display: block;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 100%; /* Adjust input width */
+    padding: 10px; /* Adjust input padding */
+    font-size: 16px; /* Adjust font size */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
+
+#popup-form button { 
+    width: 100%; /* Adjust button width */
+    padding: 10px; /* Adjust button padding */
+    background-color: #697a21; /* Set button background color */
+    color: white; /* Set button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smoother hover effect */
+}
+
+#popup-form button:hover { 
+    background-color: #5c671a; /* Change background color on hover */
+}
